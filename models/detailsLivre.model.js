@@ -6,7 +6,7 @@ export default (sequelize) => {
 
 			// One to one 
 			DetailLivre.hasOne(models.Livre, {
-				foreignKey : "livre_id",
+				foreignKey : "detail_livre_id",
 				as : "livre"
 			})
 		}

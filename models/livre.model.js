@@ -5,7 +5,7 @@ export default (sequelize) => {
         static associate(models) {
             // Relation de retour : un détail appartient à un seul livre
             Livre.belongsTo(models.DetailsLivre, {
-                foreignKey: "livre_id",
+                foreignKey: "detail_livre_id",
                 as: "details",
             });
 
